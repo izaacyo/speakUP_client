@@ -30,7 +30,7 @@ const App = () => {
 
   useEffect(() => {
     const socket = io(API_URL)
-   // dispatch({ type: 'SOCKET', payload: socket })
+    dispatch({ type: 'SOCKET', payload: socket })
     return () => { socket.close() }
   },[])
 
