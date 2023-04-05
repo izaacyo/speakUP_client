@@ -47,7 +47,7 @@ export function validateEmail(email: string) {
 
 // Valid Blog
 export const validCreateBlog = ({
-  title, content, description, thumbnail, category
+  title, content, description, thumbnail, subject
 }: IBlog) => {
   const err: string[] = []
 
@@ -71,7 +71,7 @@ export const validCreateBlog = ({
     err.push("Thumbnail cannot be left blank.")
   }
 
-  if(!category){
+  if(!subject){
     err.push("Category cannot be left blank.")
   }
 

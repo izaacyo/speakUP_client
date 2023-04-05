@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const CreateForm: React.FC<IProps> = ({blog, setBlog}) => {
-  const { categories } = useSelector((state: RootStore) => state)
+  const { subjects } = useSelector((state: RootStore) => state)
 
   const handleChangeInput = (e: InputChange) => {
     const { value, name } = e.target
@@ -57,11 +57,11 @@ const CreateForm: React.FC<IProps> = ({blog, setBlog}) => {
 
       <div className="form-group my-3">
         <select className="form-control text-capitalize"
-        value={blog.subject} name="category"
+        value={blog.subject} name="subject"
         onChange={handleChangeInput}>
           <option value="">Choose a category</option>
           {
-            categories.map(subject => (
+            subjects.map(subject => (
               <option key={subject._id} value={subject._id}>
                 {subject.name}
               </option>

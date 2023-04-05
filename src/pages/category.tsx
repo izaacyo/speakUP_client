@@ -11,7 +11,7 @@ const Category = () => {
   const [name, setName] = useState('')
   const [edit, setEdit] = useState<ICategory | null>(null)
 
-  const { auth, categories } = useSelector((state: RootStore) => state)
+  const { auth, subjects } = useSelector((state: RootStore) => state)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const Category = () => {
 
       <div>
         {
-          categories.map(subject => (
+          subjects.map(subject => (
             <div className="category_row" key={subject._id}>
               <p className="m-0 text-capitalize">{subject.name}</p>
 

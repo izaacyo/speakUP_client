@@ -12,7 +12,7 @@ import CardVert from '../../components/cards/CardVert'
 
 
 const BlogsByCategory = () => {
-  const { categories, blogsCategory } = useSelector((state: RootStore) => state)
+  const { subjects, blogsCategory } = useSelector((state: RootStore) => state)
   const dispatch = useDispatch()
   const { slug } = useParams<IParams>()
 
@@ -24,9 +24,9 @@ const BlogsByCategory = () => {
   const { search } = history.location;
 
   useEffect(() => {
-    const category = categories.find(item => item.name === slug)
+    const category = subjects.find(item => item.name === slug)
     if(category) setCategoryId(category._id)
-  },[slug, categories])
+  },[slug, subjects])
 
 
   useEffect(() => {
