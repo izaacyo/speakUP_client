@@ -25,7 +25,7 @@ const CreateBlog: React.FC<IProps> = ({id}) => {
     content: '',
     description: '',
     thumbnail: '',
-    category: '',
+    subject: '',
     createdAt: new Date().toISOString()
   }
 
@@ -57,7 +57,7 @@ const CreateBlog: React.FC<IProps> = ({id}) => {
       content: '',
       description: '',
       thumbnail: '',
-      category: '',
+      subject: '',
       createdAt: new Date().toISOString()
     }
 

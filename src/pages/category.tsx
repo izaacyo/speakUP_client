@@ -65,15 +65,15 @@ const Category = () => {
 
       <div>
         {
-          categories.map(category => (
-            <div className="category_row" key={category._id}>
-              <p className="m-0 text-capitalize">{category.name}</p>
+          categories.map(subject => (
+            <div className="category_row" key={subject._id}>
+              <p className="m-0 text-capitalize">{subject.name}</p>
 
               <div>
                 <i className="fas fa-edit mx-2"
-                onClick={() => setEdit(category)} />
+                onClick={() => setEdit(subject)} />
                 <i className="fas fa-trash-alt"
-                onClick={() => handleDelete(category._id)} />
+                onClick={() => handleDelete(subject._id)} />
               </div>
             </div>
           ))

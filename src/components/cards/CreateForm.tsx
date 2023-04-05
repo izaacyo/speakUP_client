@@ -57,13 +57,13 @@ const CreateForm: React.FC<IProps> = ({blog, setBlog}) => {
 
       <div className="form-group my-3">
         <select className="form-control text-capitalize"
-        value={blog.category} name="category"
+        value={blog.subject} name="category"
         onChange={handleChangeInput}>
           <option value="">Choose a category</option>
           {
-            categories.map(category => (
-              <option key={category._id} value={category._id}>
-                {category.name}
+            categories.map(subject => (
+              <option key={subject._id} value={subject._id}>
+                {subject.name}
               </option>
             ))
           }
