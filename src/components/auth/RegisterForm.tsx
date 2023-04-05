@@ -45,7 +45,7 @@ const RegisterForm = () => {
 
         <input type="text" className="form-control" id="account"
         name="account" value={account} onChange={handleChangeInput}
-        placeholder="Example@gmail.com/+84374481936" />
+        placeholder="Example@gmail.com" />
       </div>
 
       <div className="form-group mb-3">
