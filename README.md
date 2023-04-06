@@ -17,4 +17,3 @@ It includes features as:
 
 Login as Admin using the credentials: email: blogspeakup2@gmail.com password: speakup2
 Or register yourself using your email. 
-
