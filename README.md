@@ -6,12 +6,12 @@ This project is a MERN website developed using Typescript and Redux. This Reppo 
 
 It includes features as:
 
-Register, login with google mail.
-Forgot password, reset password and register a new account by Email verification.
-Update personal information (name, password and avatar)
-Create new blog with React quill.
-Comment realtime with Socket.io
-Pagination, search with autocomplete Mongodb
+- Register, login with google mail.
+- Forgot password, reset password and register a new account by Email verification.
+- Update personal information (name, password and avatar)
+- Create new blog with React quill.
+- Comment realtime with Socket.io
+- Pagination, search with autocomplete Mongodb
 
 ### Login credentials
 
